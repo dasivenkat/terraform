@@ -8,7 +8,7 @@ resource "aws_security_group" "allow_tls" {
     from_port        = 443
     to_port          = 443
     protocol         = "tcp"
-    cidr_blocks      = "116.50.30.20/32"
+    cidr_blocks      = ["116.50.30.20/32"]
   }
 
   egress {
